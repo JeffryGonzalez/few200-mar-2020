@@ -3,9 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ShoppingComponent } from './components/shopping/shopping.component';
 import { CounterComponent } from './components/counter/counter.component';
+import { BooksComponent } from './features/books/books.component';
 
 
 const routes: Routes = [
+  {
+    path: 'books',
+    component: BooksComponent
+  },
   {
     path: 'counter',
     component: CounterComponent
@@ -18,6 +23,7 @@ const routes: Routes = [
     path: 'shopping',
     component: ShoppingComponent
   },
+
   {
     path: '**',
     redirectTo: 'dashboard'
